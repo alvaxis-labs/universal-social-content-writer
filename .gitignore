@@ -1,0 +1,10 @@
+# Client baselines may contain confidential company information.
+clients/**/company_baseline.md
+clients/**/research_baseline.md
+
+# Keep directory placeholders.
+!clients/.gitkeep
+
+# Local/editor artifacts
+.DS_Store
+*.tmp
