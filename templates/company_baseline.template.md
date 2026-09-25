@@ -15,6 +15,8 @@
 - Positioning:
 - Key differentiators:
 - Primary markets:
+- Audience time zones (confirmed / assumed):
+- Approved posting constraints / campaign deadlines:
 - Current priorities:
 - Hard constraints:
 
@@ -39,6 +41,14 @@
 - Facebook behavior:
 - Positive reference patterns:
 - Negative reference patterns:
+
+## Visual Direction (when supplied)
+- Approved colors / palette:
+- Approved imagery / illustration style:
+- Composition and text placement preferences:
+- Logo / product / character reference assets:
+- Visual patterns to avoid:
+- Unapproved creative suggestions (keep separate from brand rules):
 
 ## Products / Offering
 ### Offering 1

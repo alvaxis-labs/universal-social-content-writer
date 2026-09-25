@@ -1,6 +1,6 @@
 # Universal Social Content Writer
 
-A reusable senior marketing/content-writing agent system for **X/Twitter and Facebook**.
+A reusable content planning, writing, and creative direction skill for **X/Twitter and Facebook**. It produces written content, copy-paste AI image prompt suggestions, and suggested posting times.
 
 The system is designed so the client maintains one Google Sheet, while the agent maintains compact working context and reusable research.
 
@@ -18,6 +18,35 @@ The Google Sheet always wins if it conflicts with a baseline.
 - X/Twitter
 - Facebook
 
+## One skill, multiple modes
+
+The modes share the same brand context and approved strategy:
+
+| Mode | What you get |
+| --- | --- |
+| Strategy | Research, ideas, angles, pillars, campaigns, and content plans |
+| Writing | Posts, threads, hooks, CTAs, and platform adaptations |
+| Visual Prompt | Visual concepts, suggested AI image prompts, on-image copy, and multi-image outlines |
+| Posting Time | Suggested hours, audience time zone, rationale, and evidence or test assumptions |
+
+Ask for a complete content package to get three outputs: written content, a suggested visual prompt, and a suggested posting time. Or request just one output. Editorial review applies to the whole package.
+Visual Prompt Mode produces suggestions you can copy into an image tool. It does not create
+images. See [the visual prompt guide](docs/visual-prompts.md) for the format and an example.
+[Posting time guidance](docs/posting-times.md) distinguishes account evidence from suggested
+test windows. These are recommendations, not scheduled posts.
+
+Example requests:
+
+- “Turn Content Plan row 12 into a Facebook post with a visual concept and a copy-paste AI image prompt.”
+- “Suggest a prompt for a pink 3D Pokémon-style creature.”
+- “Outline a five-panel educational post with panel copy and image prompt suggestions.”
+- “Review this caption and visual prompt together, then improve them.”
+- “Suggest posting hours for this Facebook post for our audience in Vietnam. Label times to test if we have no analytics.”
+
+Simple standalone prompt requests do not need a client Sheet. Brand content uses the setup
+below. The scope remains X/Twitter and Facebook; video production and automatic publishing
+are outside this pack's current workflow.
+
 ## First-time setup
 
 1. Give the agent this repository (or upload this pack).
@@ -26,7 +55,7 @@ The Google Sheet always wins if it conflicts with a baseline.
 4. The agent reads `SKILL.md` and the client Sheet.
 5. The agent creates a client workspace and generates `company_baseline.md`.
 6. The agent creates `research_baseline.md` only if durable external research is triggered.
-7. The agent starts strategy or writing work and writes results back to the client Sheet.
+7. The agent selects the relevant modes, prepares the requested content package, and writes results back to the existing agent-owned Sheet fields.
 
 ## Normal recurring work
 

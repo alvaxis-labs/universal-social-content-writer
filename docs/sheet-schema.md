@@ -80,3 +80,29 @@ The Sheet is authoritative. Baselines are compressed caches.
 Refresh `company_baseline.md` only when material recurring context changes, such as positioning, audience, TOV, products, strategy, claims, terminology, constraints, or reference set.
 
 A new Content Plan row alone does not require a baseline rebuild.
+
+## Visual prompts and complete content packages
+
+Use the existing columns. No workbook migration or new tab is required.
+
+| Existing Content Plan field | Content package use |
+| --- | --- |
+| Writer Angle / Rationale | Angle, format choice, visual concept, and why it supports the objective |
+| Draft | Labeled post copy, on-image copy, suggested AI image prompt(s), panel outline, suggested posting time with time zone and rationale, and assembly notes as relevant |
+| Research Notes / Sources | Verified claims, source links, and relevant reference asset links |
+| Writer Self-Review | Copy/prompt consistency, verification limits, and missing asset dependencies |
+| Draft Status | Actual writing/review stage; a suggested prompt does not mean a visual exists |
+| Final / Published Copy | Approved/requested final post copy; keep image-tool instructions in Draft |
+
+Read the target row before editing. Preserve unrelated content and existing drafts unless
+revision or replacement is requested. If there is no dedicated prompt section, append a
+clearly labeled section to the agent-owned Draft cell. On revision, update only the relevant
+section. Avoid replacing formulas or writing entire rows when a specific cell is sufficient.
+
+Do not overwrite `Date / Slot`, `Client Approval`, client briefs, or required assets. A suggested time belongs in a labeled `Suggested posting time` section of Draft; it does not replace the client schedule. Do not put a prompt
+in `Publish / Post URL` or mark a suggestion as an approved image. If Sheet access is
+unavailable, return the same labeled package for manual pasting and report that limitation.
+
+Approved visual preferences can be read from relevant existing Voice & Style entries and
+asset references. Keep inferred directions labeled as suggestions in agent notes. Refresh
+only the affected company baseline section when approved visual guidance changes.
