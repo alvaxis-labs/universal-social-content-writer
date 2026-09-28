@@ -20,24 +20,26 @@ For a standalone prompt request, deliver the prompt directly. Do not require a S
 company baseline, or full strategy exercise for a simple supplied concept. Use available
 brand context when the request concerns a known client.
 
-## Default look: simple, slightly amateur human design
+## Default look: thoughtful everyday design
 
-Unless the brief or approved brand references call for another style, aim for a graphic
-that looks casually put together by an ordinary person with basic design skills. It should
-feel approachable and a little amateur, with readable text and a clear message. Canva and
-Photoshop were examples of familiar editing apps, not a literal style requirement or a
-request for polished agency work. Describe the visual choices directly in each prompt.
+Unless the brief or approved brand references call for another style, aim for an approachable,
+carefully composed graphic with enough detail to feel finished. Balance visual interest with
+restraint. Do not ask for beginner-level work, deliberate amateur styling, or an excessively
+bare layout. Canva and Photoshop are examples of familiar design tools, not a literal style
+requirement. Describe the intended visual decisions directly in each prompt.
 
-Use an ordinary font, a plain background, a small palette, and only a few useful elements:
-perhaps one photo cutout, basic shape, simple doodle, or flat illustration. Allow slight
-asymmetry, modestly uneven spacing, or a hand-placed element when appropriate. Do not make
-every graphic perfectly balanced, glossy, intricately layered, or full of decorative details.
-Avoid replacing glossy AI styling with an equally elaborate editorial or luxury aesthetic.
+Build interest through a clear focal point, readable type hierarchy, varied scale, comfortable
+spacing, and a cohesive palette. Add moderate detail that supports the subject: subtle surface
+texture, gentle overlap, soft contact shadows, natural lighting, or a small purposeful accent.
+Choose suitable details for the medium rather than including every effect. Modest physical
+depth does not require a glossy 3D-rendered look.
 
-Keep the amateur touch subtle. Do not manufacture typos, illegible text, broken anatomy,
-blurry output, or random clutter. Grain, paper texture, and doodles are optional choices,
-not mandatory signs of a human-made design. Preserve supplied brand constraints. This is
-an intended appearance, not a claim about who actually made the resulting image.
+Allow a few natural or handmade touches when appropriate, without forcing uneven alignment
+or fake imperfections. Preserve sharp, readable text and good composition. Do not manufacture
+typos, broken anatomy, blur, or clutter to suggest human authorship. Paper, grain, tape,
+sticky notes, doodles, and particular colors are example-specific choices, not defaults.
+Adapt the subject, medium, and level of detail to each brand and brief. The intended human-made
+feel is an aesthetic direction, not a claim about who created the resulting image.
 
 Do not add glossy plastic, chrome, glass effects, inflated 3D objects, dramatic cinematic
 lighting, neon glow, floating decorative objects, or excessive gradients by default. Avoid
@@ -114,31 +116,45 @@ Offer two or three distinct directions when exploration is requested or the brie
 Recommend one. Do not produce a list of nearly identical prompts for every simple request.
 Label any proposed alt text as provisional until someone can inspect the generated image.
 
-## Example: simple, slightly amateur direction
+## Example: balanced detail and natural depth
 
-Request: “Suggest a pink visual for a playful character post.”
-
-Suggested AI image prompt:
+Request: “Create a visual prompt for a post about planning tomorrow's tasks.”
 
 ```text
-Create a complete square social post that looks casually made by someone with basic
-design skills. Use a plain pale-pink background. Put the exact words "Stay curious."
-near the upper-left in an ordinary bold dark-rose sans-serif font. Keep the words large
-and easy to read, with a little unevenness in the surrounding spacing.
+Create a complete square social media graphic about planning tomorrow's tasks.
 
-Place one simple flat doodle of a small pink fantasy creature in the lower-right. Give
-it rounded ears, tiny paws, a curled tail, and a curious expression. Use basic filled
-shapes and a slightly hand-drawn dark-rose outline, with little or no shading. Let it
-sit slightly off-center as if someone placed it by hand. Use just pale pink, medium
-pink, and dark rose. Keep plenty of plain background and stop at these few elements.
+Make it feel like a thoughtfully designed post from a small creative business:
+approachable, visually interesting, and carefully composed, with a few handmade touches.
 
-Make it friendly and a little amateur, with no glossy finish, 3D effects, dramatic
-lighting, elaborate textures, decorative extras, or extra text. Include the headline
-in the finished image. Keep spelling correct and all text readable.
+Use a warm cream background with subtle paper texture. At the top-left, render the exact
+headline "What matters tomorrow?" in a bold, friendly sans-serif font, with "tomorrow?"
+slightly larger.
+
+Below the headline, arrange three paper notes in a loose, overlapping composition. Use
+butter yellow, dusty pink, and muted sky blue. Give the paper believable texture, gently
+lifted corners, and soft contact shadows that create modest depth.
+
+Render these exact labels, one per note:
+"Finish."
+"Move forward."
+"Let it wait."
+
+Add a hand-drawn checkbox beside each label. Include a small strip of translucent tape
+holding one note and a short pencil underline beneath "Finish." Keep these details
+purposeful and sparse.
+
+Balance the large headline with the notes. Use varied sizes, comfortable margins, and
+slight asymmetry. Make every word easy to read.
+
+Avoid glossy plastic, exaggerated 3D, dramatic lighting, neon glow, and decorative clutter.
+Keep the materials tactile and the overall finish natural. Generate the whole finished
+graphic, including all text with correct spelling. No placeholders or manual assembly.
 ```
 
-Use approved brand fonts, colors, and wording when supplied; this example palette and
-headline are creative suggestions. Check the rendered text after generation.
+The transferable principles are hierarchy, moderate detail, believable materials, natural
+depth, and purposeful accents. Do not reuse the notes, paper texture, tape, or palette for
+unrelated briefs merely because they appear in this example. Use approved brand guidance
+when supplied and check the rendered text after generation.
 
 ## Example: an explicit 3D request
 
@@ -179,6 +195,8 @@ Check that every intended headline and label appears verbatim inside its image p
 with readable placement instructions and no contradictory "no text" exclusion. Check that
 asset dependencies and illustrative assumptions are clearly labeled.
 Unless the brief requires otherwise, remove gratuitous 3D, shine, glow, and dramatic lighting.
-Check that the default uses few elements and simple, slightly amateur design choices,
-without drifting into polished agency styling or deliberate visual errors.
+Check the balance: does the prompt specify enough hierarchy and subject-appropriate detail
+to feel finished, without unnecessary decoration or synthetic gloss? If it is too bare,
+strengthen composition, material detail, or one purposeful accent. If it is overloaded, remove
+competing effects. Avoid both deliberate amateur styling and repetitive use of the example.
 A suggested prompt cannot pass visual quality assurance for an image that has not been made.

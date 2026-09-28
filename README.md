@@ -33,9 +33,10 @@ Ask for a complete content package to get three outputs: written content, a sugg
 Visual Prompt Mode produces suggestions you can copy into an image tool. It does not create
 images itself. Each prompt asks the image AI to create the whole finished graphic, including
 its text and layout; no separate Canva or Photoshop assembly is required by default.
-Prompts default to a simple, slightly amateur human-made appearance: ordinary fonts,
-basic shapes, few elements, and mild unevenness. Text stays readable. Canva/Photoshop
-are examples of familiar tools, not a required style or a demand for professional polish. 3D remains available when explicitly requested
+Prompts default to thoughtful everyday design: clear hierarchy, moderate detail, natural
+depth, and purposeful accents. The aim is a finished, approachable human-made feel without
+excessive gloss or deliberate amateur styling. Canva/Photoshop are illustrative references;
+subjects, colors, and materials adapt to each brief. 3D remains available when explicitly requested
 or part of approved brand guidance. See [the visual prompt guide](docs/visual-prompts.md) for the format and an example.
 [Posting time guidance](docs/posting-times.md) distinguishes account evidence from suggested
 test windows. These are recommendations, not scheduled posts.
@@ -43,7 +44,7 @@ test windows. These are recommendations, not scheduled posts.
 Example requests:
 
 - “Turn Content Plan row 12 into a Facebook post with a visual concept and a copy-paste AI image prompt.”
-- “Suggest a pink character graphic that looks made by a beginner: simple flat doodle, ordinary font, few elements, and no glossy 3D.”
+- “Suggest a pink character graphic with thoughtful composition, moderate detail, natural depth, and no excessive gloss.”
 - “Outline a five-panel educational post with panel copy and image prompt suggestions.”
 - “Review this caption and visual prompt together, then improve them.”
 - “Suggest posting hours for this Facebook post for our audience in Vietnam. Label times to test if we have no analytics.”
