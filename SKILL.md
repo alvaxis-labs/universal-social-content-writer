@@ -1,6 +1,6 @@
 ---
 name: universal-social-content-writer
-description: Plan and write X/Twitter and Facebook content, suggest copy-paste AI image prompts, and recommend posting times with audience time zones and a clear evidence basis. Uses uploaded client workbooks and returns downloadable Excel content packages; Google Sheets is optional. Visual deliverables are prompt suggestions and production notes.
+description: Plan and write X/Twitter and Facebook content, suggest copy-paste AI image prompts, and recommend posting times with audience time zones and a clear evidence basis. Uses a Google Sheets intake template and returns downloadable Excel content packages. Visual deliverables are prompt suggestions and production notes.
 ---
 
 # Universal Social Content Writer
@@ -27,18 +27,18 @@ Do not silently change the client's positioning, audience, approved facts, campa
 
 # Workspace and delivery
 
-Default to downloadable Excel (`.xlsx`) files. Do not ask clients to connect Google Drive or grant account access as part of normal onboarding. Google Sheets is an optional route only when the user chooses it.
+Use the Google Sheets template for intake and a downloadable Excel (`.xlsx`) workbook for finished content. These are separate steps. Do not require a Google Drive account connection: clients can fill their own Sheet copy, download it as Excel and upload it here. Editing or delivering content in a connected Google Sheet is optional and requires the user to choose it.
 
 - `SKILL.md`: shared operating instructions. Never store private client information in this public skill.
 - Client workbook and supplied brand assets: current source material. The latest user-supplied version and explicit corrections take precedence over cached baselines.
 - `company_baseline.md`: compact recurring context derived from approved sources, not a replacement for the client file.
 - `research_baseline.md`: optional durable research context.
 
-Read [docs/file-workflow.md](docs/file-workflow.md) for file intake, output columns, versioning and delivery. Read [docs/new-agent-workflow.md](docs/new-agent-workflow.md) for first-session and follow-up decisions. References to “Sheet” elsewhere mean the active client workbook; eight-tab names and `Draft` write-back conventions apply only to the optional Google Sheets/legacy route described in [docs/sheet-schema.md](docs/sheet-schema.md).
+Read [docs/file-workflow.md](docs/file-workflow.md) for intake handoff, output columns, versioning and delivery. Read [docs/new-agent-workflow.md](docs/new-agent-workflow.md) for first-session and follow-up decisions. References to “Sheet” elsewhere mean the active client workbook; eight-tab names describe the intake template; `Draft` write-back conventions apply only to the optional connected Google Sheets output route described in [docs/sheet-schema.md](docs/sheet-schema.md).
 
 ## Client onboarding
 
-For a new client with no brief, first hand them the bundled [Client Intake Template](assets/Client_Intake_Template.xlsx) as a downloadable attachment. Ask them to fill the yellow answers, save the file and upload it with their brand kit/assets. Do not substitute a Google Sheet link or request a Drive connection. If they already supplied enough context or a completed workbook, use it without forcing repeat intake. Standalone prompt-only requests do not need a workbook.
+For a new client with no brief, first send the [Google Sheets intake template](https://docs.google.com/spreadsheets/d/1MYlCFQZYjfnFfNlWqQ9idDWg1jBpaDZCr6AjkfzzbgQ/edit). Tell them to use File → Make a copy and fill only the yellow answers in `01 Brand`. They can return an accessible copy link or use File → Download → Microsoft Excel (.xlsx) and upload the file with their brand kit/assets. Do not require a Drive connection or public sharing. The bundled [Excel intake alternative](assets/Client_Intake_Template.xlsx) is only a fallback if they prefer offline intake or cannot open the Google template. If enough context is already supplied, do not force repeat intake. Standalone prompt-only requests do not need a workbook.
 
 Accept partially completed files. Extract supported details yourself and ask one short grouped follow-up only for essential gaps or conflicting instructions. Leave optional gaps blank; “Not sure—please help” is a valid response. Summarize your understanding briefly without requiring a second approval for already approved facts.
 
@@ -50,7 +50,7 @@ For a content calendar or complete content package, return an actual downloadabl
 
 For revisions, use the latest uploaded workbook, preserve client comments, approvals and unchanged posts, and return a new version without overwriting the input. Never assume an older local file is current. Do not mark revised approved content approved without renewed approval of the changed material.
 
-Use Google Sheets only on explicit user preference and authorized access, preserving its existing schema. If file generation is genuinely unavailable, state the limitation and provide separately labeled copyable tables as a fallback; do not claim a workbook was created. Never require a paid tool or connector to follow the file workflow.
+Writing finished content back to Google Sheets requires explicit user preference and authorized access, preserving its existing schema. Receiving a Google Sheet intake link does not change the default Excel output. If file generation is genuinely unavailable, state the limitation and provide separately labeled copyable tables as a fallback; do not claim a workbook was created. Never require a paid tool or connector to follow the file workflow.
 
 ---
 

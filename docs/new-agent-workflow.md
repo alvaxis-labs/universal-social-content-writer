@@ -2,8 +2,8 @@
 
 ## If this is the first session for a client
 
-1. Read `SKILL.md` and `docs/file-workflow.md`. Default to file upload/download, without a connected Google account.
-2. If no adequate brief is supplied, attach `assets/Client_Intake_Template.xlsx` first and give the short instructions below. Do not ask the client to create their own template.
+1. Read `SKILL.md` and `docs/file-workflow.md`. Use Google Sheets for the intake template and downloadable Excel for the finished package. No Drive connection is required.
+2. If no adequate brief is supplied, send the Google Sheets intake template from `docs/file-workflow.md` first and give the short instructions below. Do not ask the client to create their own template.
 3. Read the returned workbook, conversation and uploaded approved sources. Accept partial answers. Do not require extra tabs or duplicate entries.
 4. Ask for the approved brand kit/assets if absent. Follow `docs/brand-kit-workflow.md`; if no kit exists, propose a direction for approval.
 5. Extract recurring context and create a concise company baseline from its template. Label proposals and unknowns. Preserve client input and approvals.
@@ -13,9 +13,9 @@
 
 ### Client-facing handoff
 
-“Download the attached intake workbook, fill the yellow answers, save it and upload it here with your brand kit or asset files. Optional answers can stay blank. If you don’t know an answer, write ‘Not sure—please help’. No Google account connection is needed.”
+“Make your own copy of [this intake template](https://docs.google.com/spreadsheets/d/1MYlCFQZYjfnFfNlWqQ9idDWg1jBpaDZCr6AjkfzzbgQ/edit) using File → Make a copy. Fill the yellow answers in **01 Brand**; other tabs are optional. If unsure, write ‘Not sure—please help’. Send your copy link back, or choose File → Download → Microsoft Excel (.xlsx) and upload it here with your brand kit/assets. No Drive connection is required. I’ll return your content calendar, captions and image prompts as a downloadable Excel workbook.”
 
-Attach the file, not just its name or a local path the user cannot access. If the client chooses Google Sheets instead, provide the existing template link from `docs/sheet-schema.md`, explain make-copy/fill/share steps, and verify authorized access. Never write client data into the shared master.
+Check template access when possible. If restricted, resolve viewing access with the owner or offer the bundled offline intake alternative. Do not require clients to make private files public. A supplied intake Sheet link is not authorization to edit that Sheet or switch output to Google Sheets. Connected write-back is a separate optional choice.
 
 ### Completion and follow-up decisions
 

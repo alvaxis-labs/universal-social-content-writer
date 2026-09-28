@@ -2,7 +2,7 @@
 
 A reusable content planning, writing, and creative direction skill for **X/Twitter and Facebook**. It produces written content, copy-paste AI image prompt suggestions, and suggested posting times.
 
-The client downloads a short intake workbook, fills it in, and uploads it with approved brand references. The agent returns a completed Excel workbook. No Google Drive connection is required.
+The agent sends the Google Sheets intake template first. The client fills their own copy and returns its link or uploads an Excel export with approved brand references. The agent returns the finished content package as a downloadable Excel workbook. No Google Drive connection is required.
 
 ## Architecture
 
@@ -67,19 +67,19 @@ The balanced visual style above applies only within the client's brand rules.
 ## First-time setup
 
 1. Give the agent this skill pack and say what content you need. You do not need a Sheet URL.
-2. The agent first gives you [Client Intake Template.xlsx](assets/Client_Intake_Template.xlsx), unless you already supplied enough context.
-3. Fill the yellow answers, save the workbook and upload it with your brand kit/assets. Optional answers may stay blank; “Not sure—please help” is valid.
+2. The agent first gives you the [Google Sheets intake template](https://docs.google.com/spreadsheets/d/1MYlCFQZYjfnFfNlWqQ9idDWg1jBpaDZCr6AjkfzzbgQ/edit), unless you already supplied enough context. Use File → Make a copy.
+3. Fill the yellow answers in **01 Brand**. Send your copy link back, or use File → Download → Microsoft Excel (.xlsx) and upload the file with your brand kit/assets. Other tabs are optional; “Not sure—please help” is valid.
 4. The agent reads your materials and asks only about essential missing details. If no kit exists, it proposes a direction for approval.
 5. Receive a downloadable `.xlsx`: **Content Calendar**, **Post Content**, and **Image Prompts**, connected by **Post ID**. Captions and image prompts have their own cells.
 6. To revise, upload your latest workbook with feedback. The agent returns a new version preserving unchanged work and your decisions.
 
 Use [BOOTSTRAP_PROMPT.md](BOOTSTRAP_PROMPT.md) for a fresh session. See [the file workflow](docs/file-workflow.md) for output fields and delivery rules. Uploading files shares those files with the AI; it does not grant access to your Drive.
 
-## Optional Google Sheets route
+## Optional connected Google Sheets output
 
-Choose this explicitly if you want the agent to work in a connected Sheet. The [Google template](https://docs.google.com/spreadsheets/d/1MYlCFQZYjfnFfNlWqQ9idDWg1jBpaDZCr6AjkfzzbgQ/edit) and [existing schema](docs/sheet-schema.md) remain supported. Account access and write permissions are separate from skill installation.
+Choose this explicitly if you want the agent to write finished content back into a connected Sheet instead of delivering Excel. Providing a Google Sheet intake link alone does not select this route. The [Google template](https://docs.google.com/spreadsheets/d/1MYlCFQZYjfnFfNlWqQ9idDWg1jBpaDZCr6AjkfzzbgQ/edit) and [existing schema](docs/sheet-schema.md) remain supported. Account access and write permissions are separate from skill installation.
 
-`Universal_Content_Writer_Template.xlsx` is the legacy eight-tab template. Use `assets/Client_Intake_Template.xlsx` for new file-based onboarding. Do not require clients to fill all legacy tabs.
+`Universal_Content_Writer_Template.xlsx` is the legacy eight-tab template. `assets/Client_Intake_Template.xlsx` is an offline intake alternative if preferred or if the Google template is inaccessible. Do not require clients to fill all legacy tabs.
 
 ## Client workspace
 

@@ -1,8 +1,8 @@
-# Optional Google Sheets / Legacy Schema
+# Google Sheets Intake and Optional Write-Back Schema
 
-Use this only when the client explicitly chooses Google Sheets or requests the legacy layout. The default is downloadable Excel intake and delivery; see [file-workflow.md](file-workflow.md).
+The Google template is the default intake. Its eight tabs are not mandatory client homework. Finished content defaults to a downloadable Excel package; see [file-workflow.md](file-workflow.md). The write-back instructions below apply only when the user explicitly requests connected Google Sheets output.
 
-Optional Google template: https://docs.google.com/spreadsheets/d/1MYlCFQZYjfnFfNlWqQ9idDWg1jBpaDZCr6AjkfzzbgQ/edit
+Default intake template: https://docs.google.com/spreadsheets/d/1MYlCFQZYjfnFfNlWqQ9idDWg1jBpaDZCr6AjkfzzbgQ/edit
 
 The client and agent use one client-owned Google Sheet with these fixed tabs:
 

@@ -1,10 +1,12 @@
 # Downloadable workbook workflow
 
-This is the default route. No Google account, Drive connection or public sharing is required. Use an available spreadsheet-authoring capability to create actual `.xlsx` files; follow its native export and verification guidance. A chat table is not an Excel attachment.
+Downloadable Excel is the default output. Intake starts with the Google Sheets template; a Drive connection or public sharing is not required. Use an available spreadsheet-authoring capability to create actual `.xlsx` files; follow its native export and verification guidance. A chat table is not an Excel attachment.
 
 ## Intake first
 
-When a new client has not supplied enough context, attach `assets/Client_Intake_Template.xlsx`. The single `Client Brief` tab contains nine core answers and three optional answers. Tell the client to fill the yellow cells, save and upload it with their current approved brand kit and assets. Do not require the old eight-tab workbook. Accept another supplied workbook or an adequate conversational brief instead of making the client start again.
+When a new client has not supplied enough context, send the [Google Sheets intake template](https://docs.google.com/spreadsheets/d/1MYlCFQZYjfnFfNlWqQ9idDWg1jBpaDZCr6AjkfzzbgQ/edit) first. Ask them to use File → Make a copy and fill the yellow answers in `01 Brand`; other tabs are optional. To return it without connecting Drive, they can use File → Download → Microsoft Excel (.xlsx) and upload the result with their approved brand kit/assets. An accessible copy link is also acceptable. Never write client data into the master or require public sharing. Check template access when possible and resolve owner-side restrictions rather than presenting a restricted link as ready for clients.
+
+The bundled `assets/Client_Intake_Template.xlsx` is an offline fallback, not the default first handoff. Accept another supplied workbook or an adequate conversational brief without forcing repeat intake. The intake format does not decide the output format: a Google Sheet intake still receives a downloadable Excel content package.
 
 Read supplied assets before asking questions. Inaccessible links should lead to a request for the specific file upload, not an account connection. Never claim that file upload avoids sharing the file's contents with the AI.
 
