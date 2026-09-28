@@ -53,6 +53,17 @@ Simple standalone prompt requests do not need a client Sheet. Brand content uses
 below. The scope remains X/Twitter and Facebook; video production and automatic publishing
 are outside this pack's current workflow.
 
+## Client brand adherence
+
+Before writing a client image prompt, the agent finds and reads the approved brand kit,
+records its exact visual rules, and identifies the official assets. Each prompt contains
+the applicable colors, typography, logo treatment, imagery rules and exact text, alongside
+concrete composition instructions. Website observations do not become approved brand rules.
+
+The agent checks the prompt against the kit. When you return a generated image, it checks
+the result and writes targeted corrections. See [the brand-kit workflow](docs/brand-kit-workflow.md).
+The balanced visual style above applies only within the client's brand rules.
+
 ## First-time setup
 
 1. Give the agent this repository (or upload this pack).

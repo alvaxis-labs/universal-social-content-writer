@@ -5,6 +5,12 @@ The deliverable is a suggested prompt the person can copy into an image-generati
 to create the whole finished image, including its layout, illustration, and intended text.
 Do not call image-generation tools, produce graphics, or imply that an image already exists.
 
+## Brand rules first
+
+For client-branded work, read and apply [brand-kit-workflow.md](brand-kit-workflow.md) before
+choosing the visual direction. Extract the approved specifications and identify required assets.
+Include concrete brand rules in every prompt; “follow the brand kit” alone is insufficient.
+
 ## Start with the content idea
 
 Use the brief, audience, approved facts, and brand context already loaded. Choose what the
@@ -12,8 +18,9 @@ visual contributes: explain an idea, demonstrate a real product, establish a moo
 a story memorable. A text-only post is valid when a visual adds little.
 
 Respect an explicitly requested subject, style, color, and mood. A pink 3D creature is a
-creative direction for that brief, not a permanent brand rule. When visual guidelines are
-missing, make a reasonable creative suggestion and label it as a suggestion. Do not invent
+creative direction for that brief, not a permanent brand rule. Use the approved brand specifications for client work. Keep permitted creative choices
+separate from fixed brand rules. Resolve missing authoritative guidance using the brand-kit
+workflow rather than selecting a website-inspired palette. Do not invent
 brand colors, approved mascots, logos, product packaging, or visual approvals.
 
 For a standalone prompt request, deliver the prompt directly. Do not require a Sheet,
@@ -85,7 +92,8 @@ No tool choice is required for a tool-neutral prompt. Put optional settings outs
 
 If exact product appearance, a logo, or a person must be preserved, state which approved
 reference image the user needs to attach. Never claim to have attached or inspected an
-unavailable asset. Offer a clearly labeled conceptual alternative if the asset is missing.
+unavailable asset. Retrieve the approved asset when available; otherwise identify that specific dependency.
+Do not replace a required brand or product asset with an invented conceptual alternative.
 
 Use a real screenshot or verified product photo when the content depends on exact UI or
 product evidence. Do not ask an image model to invent testimonials, results, data charts,
@@ -188,6 +196,9 @@ only when they serve the story. Treat the result as a multi-image content outlin
 current publishing-format support if the user needs implementation-specific guidance.
 
 ## Review before handoff
+
+Check the prompt against the recorded brand specification first. When a generated image is
+supplied, inspect it using the brand-kit workflow and produce targeted correction instructions.
 
 Check that the prompt stands alone, matches the caption and brand context, preserves the
 requested style, and contains no contradictory composition instructions or invented facts.

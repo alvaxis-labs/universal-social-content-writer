@@ -42,13 +42,23 @@
 - Positive reference patterns:
 - Negative reference patterns:
 
-## Visual Direction (when supplied)
-- Approved colors / palette:
-- Approved imagery / illustration style:
-- Composition and text placement preferences:
-- Logo / product / character reference assets:
-- Visual patterns to avoid:
-- Unapproved creative suggestions (keep separate from brand rules):
+## Visual Direction / Brand Specification
+- Brand kit location, version/date, and last checked:
+- Rule source pages/sections:
+- Approved colors (exact values and roles; unspecified if absent):
+- Typography (families, weights, hierarchy, casing, approved fallbacks):
+- Official logo files, variants, placement, clear space and minimum size:
+- Imagery / illustration treatment, depth, lighting and texture:
+- Composition, margins, density, shapes and icons:
+- Approved product / screenshot / card / mascot assets and preservation rules:
+- Positive reference examples and specific traits:
+- Forbidden treatments / negative examples:
+- Fixed brand rules:
+- Permitted creative choices:
+- Brief-specific user-approved exceptions:
+- Missing required assets / unresolved source conflicts:
+- Prompt brand review status:
+- Generated image review status (only after inspection):
 
 ## Products / Offering
 ### Offering 1
