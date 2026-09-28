@@ -20,19 +20,24 @@ For a standalone prompt request, deliver the prompt directly. Do not require a S
 company baseline, or full strategy exercise for a simple supplied concept. Use available
 brand context when the request concerns a known client.
 
-## Default look: ordinary graphic design
+## Default look: simple, slightly amateur human design
 
-Unless the brief or approved brand references call for another style, suggest graphics that
-look deliberately assembled in Canva or Photoshop: clear hierarchy, aligned elements,
-generous spacing, a limited palette, simple shapes, and restrained effects. Translate that
-look into concrete directions; “make it less AI” or “Canva style” alone is not a useful prompt.
-These are appearance references, not claims that the image was made in those applications.
+Unless the brief or approved brand references call for another style, aim for a graphic
+that looks casually put together by an ordinary person with basic design skills. It should
+feel approachable and a little amateur, with readable text and a clear message. Canva and
+Photoshop were examples of familiar editing apps, not a literal style requirement or a
+request for polished agency work. Describe the visual choices directly in each prompt.
 
-Prefer flat editorial illustration, a clean photo cutout collage, or a simple graphic layout
-when they fit the message. Use matte surfaces, subtle paper texture only when appropriate,
-and natural lighting for photographic elements. Keep texture optional; adding grain or fake
-imperfections everywhere is not a substitute for good composition. Preserve sharp edges,
-readability, and intentional spacing rather than asking for low quality or random mistakes.
+Use an ordinary font, a plain background, a small palette, and only a few useful elements:
+perhaps one photo cutout, basic shape, simple doodle, or flat illustration. Allow slight
+asymmetry, modestly uneven spacing, or a hand-placed element when appropriate. Do not make
+every graphic perfectly balanced, glossy, intricately layered, or full of decorative details.
+Avoid replacing glossy AI styling with an equally elaborate editorial or luxury aesthetic.
+
+Keep the amateur touch subtle. Do not manufacture typos, illegible text, broken anatomy,
+blurry output, or random clutter. Grain, paper texture, and doodles are optional choices,
+not mandatory signs of a human-made design. Preserve supplied brand constraints. This is
+an intended appearance, not a claim about who actually made the resulting image.
 
 Do not add glossy plastic, chrome, glass effects, inflated 3D objects, dramatic cinematic
 lighting, neon glow, floating decorative objects, or excessive gradients by default. Avoid
@@ -47,8 +52,8 @@ for every future brief.
 
 For typography-led graphics, write one prompt for the complete finished design. Include
 exact headline wording, type hierarchy, alignment, spacing, and any supplied brand assets
-inside that prompt. Canva and Photoshop describe the desired appearance, not a required
-manual editing step. Offer manual editing only if requested or as a fallback for a specific
+inside that prompt. References to editing apps do not require a particular template style
+or a manual editing step. Offer manual editing only if requested or as a fallback for a specific
 generation error. Do not imply that an image prompt produces editable layers or guarantees
 perfect text rendering or a result without an AI appearance.
 
@@ -109,23 +114,27 @@ Offer two or three distinct directions when exploration is requested or the brie
 Recommend one. Do not produce a list of nearly identical prompts for every simple request.
 Label any proposed alt text as provisional until someone can inspect the generated image.
 
-## Example: default graphic design direction
+## Example: simple, slightly amateur direction
 
 Request: “Suggest a pink visual for a playful character post.”
 
 Suggested AI image prompt:
 
 ```text
-Create a square social graphic with the feel of a simple editorial layout assembled in
-Canva or Photoshop. Use a warm off-white background with a muted dusty-pink rectangle
-in the lower-right area. Place one original small fantasy creature over the rectangle,
-drawn as a flat two-dimensional illustration with rounded ears, tiny paws, a curled tail,
-and a curious expression. Use solid pink shapes, a consistent dark-rose outline, and
-minimal shading. Render the exact headline "Stay curious." in the upper-left, using large,
-bold, dark-rose sans-serif lettering, aligned left with generous margins. Integrate the
-headline into the finished graphic. Limit the palette to off-white, dusty pink, and dark
-rose. Keep edges crisp and the composition uncluttered. No extra text, logos, glossy
-surfaces, 3D rendering, or glow effects. Deliver the complete image, not a blank template.
+Create a complete square social post that looks casually made by someone with basic
+design skills. Use a plain pale-pink background. Put the exact words "Stay curious."
+near the upper-left in an ordinary bold dark-rose sans-serif font. Keep the words large
+and easy to read, with a little unevenness in the surrounding spacing.
+
+Place one simple flat doodle of a small pink fantasy creature in the lower-right. Give
+it rounded ears, tiny paws, a curled tail, and a curious expression. Use basic filled
+shapes and a slightly hand-drawn dark-rose outline, with little or no shading. Let it
+sit slightly off-center as if someone placed it by hand. Use just pale pink, medium
+pink, and dark rose. Keep plenty of plain background and stop at these few elements.
+
+Make it friendly and a little amateur, with no glossy finish, 3D effects, dramatic
+lighting, elaborate textures, decorative extras, or extra text. Include the headline
+in the finished image. Keep spelling correct and all text readable.
 ```
 
 Use approved brand fonts, colors, and wording when supplied; this example palette and
@@ -170,5 +179,6 @@ Check that every intended headline and label appears verbatim inside its image p
 with readable placement instructions and no contradictory "no text" exclusion. Check that
 asset dependencies and illustrative assumptions are clearly labeled.
 Unless the brief requires otherwise, remove gratuitous 3D, shine, glow, and dramatic lighting.
-Check that concrete layout and material choices support the intended Canva/Photoshop-style look.
+Check that the default uses few elements and simple, slightly amateur design choices,
+without drifting into polished agency styling or deliberate visual errors.
 A suggested prompt cannot pass visual quality assurance for an image that has not been made.
