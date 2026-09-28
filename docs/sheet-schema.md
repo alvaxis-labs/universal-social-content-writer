@@ -1,6 +1,6 @@
 # Google Sheet Schema
 
-The client maintains one Google Sheet with these fixed tabs:
+The client and agent use one client-owned Google Sheet with these fixed tabs:
 
 1. `01 Brand`
 2. `02 Audience`
@@ -12,6 +12,16 @@ The client maintains one Google Sheet with these fixed tabs:
 8. `08 Knowledge & Claims`
 
 Do not rename tabs or headers.
+
+## Starting page and progressive detail
+
+The current master uses `01 Brand` as the only required client onboarding page. It asks for nine core answers and three optional answers, including one kit/folder link. Locate fields by their labels after reading the live Sheet; do not depend on row numbers. A client may also supply the equivalent information in conversation.
+
+Detailed tabs remain available. The brand profile below the starting brief and the brand-rule extraction section in `03 Voice & Style` are explicitly marked **AGENT COMPLETES** and collapsed initially. Populate these from supplied sources, recording provenance and separating proposals from approved facts. Do not require clients to repeat information already in their kit.
+
+`07 Content Plan` initially displays seven review columns. Other columns are grouped/collapsed, not removed. Read their actual headers and address existing cells without changing the client's view unnecessarily. `Draft` contains copy, image prompts and posting-time suggestions; `Client Approval` remains client-owned.
+
+Older copies and the bundled legacy XLSX may have the original layout. Detect their actual labels and ownership before writing. Do not overwrite their client-owned fields just because a newer master assigns similar information to an agent section; use existing Agent Notes or obtain authorization for a migration.
 
 ## Ownership model
 
@@ -34,6 +44,7 @@ The agent should not silently overwrite these fields.
 ### Agent-owned
 The agent may maintain:
 
+- sourced details in explicitly agent-completed brand profile and brand-rule sections
 - research decisions
 - research notes
 - source links

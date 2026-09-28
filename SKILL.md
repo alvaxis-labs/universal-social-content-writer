@@ -35,7 +35,7 @@ This skill uses four layers:
 
 2. Client Google Sheet
    - Source of truth.
-   - Maintained by the client.
+   - Client supplies the starting brief and approvals; agent organizes sourced details.
    - Contains brand, audience, TOV, product, strategy, competitors, content plan, terminology, claims, and approvals.
 
 3. `company_baseline.md`
@@ -71,7 +71,13 @@ Do not rename tabs or headers.
 
 The client owns strategy and source information.
 
-The agent may write only into agent-designated research, draft, status, verification, source, and working-note fields.
+The agent may write into agent-designated research, draft, status, verification, source, and working-note fields, including the new template’s agent-completed brand profile and extracted brand rules. Preserve client answers and approval decisions. See [docs/sheet-schema.md](docs/sheet-schema.md) for ownership and older-template handling.
+
+## Client onboarding
+
+For a new client, follow [docs/new-agent-workflow.md](docs/new-agent-workflow.md). Offer the canonical template when no client copy exists. The client fills only the starting brief in `01 Brand`; the other tabs are optional or agent-completed. Never require every tab to be filled. Read supplied brand references, organize the supported details, and ask one short grouped follow-up only for essential gaps or conflicting instructions. A blank optional field does not block work.
+
+Ask the client for their current approved brand kit or asset folder if none has been supplied. Do not independently choose a kit or infer brand approval from a website. If no kit exists, propose a direction for approval before using it as the brand standard. Summarize the audience, goal and brand direction briefly; an extra confirmation is needed only for unresolved material choices, not information already approved.
 
 ---
 
@@ -231,7 +237,7 @@ Use when creating or revising:
 
 Use for visual concepts, copy-paste AI image prompt suggestions, on-image copy, and multi-image/carousel outlines. Read [docs/visual-prompts.md](docs/visual-prompts.md) when this mode applies. Give prompts for the image AI to create the whole finished graphic, including composition, typography, exact on-image wording, and supplied reference assets. Do not default to blank text areas or require adding text in an editor. The agent supplies the prompt; do not invoke image-generation tools. Default to thoughtful everyday design: approachable composition, clear visual hierarchy, moderate detail, subtle texture or natural depth where appropriate, and a few purposeful accents. Aim for a finished human-made feel without deliberate amateur styling or an overly bare layout. Canva/Photoshop are illustrative app references, not a literal style requirement. Adapt materials, colors, and subjects to the brief rather than reusing an example. Do not fake mistakes or degrade image quality. Avoid gratuitous gloss, exaggerated 3D, glow, and cinematic effects. Use those effects only when explicitly requested or supported by approved brand references; express the intended look through concrete visual directions.
 
-A simple prompt-only request with a supplied concept can be completed directly without a client Sheet or baseline. For client content, use the same approved context as the writing. For every client-branded visual, first apply [docs/brand-kit-workflow.md](docs/brand-kit-workflow.md): find and inspect the approved kit, record its visual specifications, and embed the applicable fixed rules and identified assets in every complete-image prompt. Do not infer approved styling from the website or invent missing brand assets. The kit takes precedence over generic aesthetic defaults; creative choices stay within its rules. Check the prompt against the kit before handoff and inspect generated results when supplied.
+A simple prompt-only request with a supplied concept can be completed directly without a client Sheet or baseline. For client content, use the same approved context as the writing. For every client-branded visual, first apply [docs/brand-kit-workflow.md](docs/brand-kit-workflow.md): use the client-supplied approved kit (ask if absent), inspect it, record its visual specifications, and embed the applicable fixed rules and identified assets in every complete-image prompt. Do not infer approved styling from the website or invent missing brand assets. The kit takes precedence over generic aesthetic defaults; creative choices stay within its rules. Check the prompt against the kit before handoff and inspect generated results when supplied.
 
 ## Posting Time Mode
 
@@ -397,9 +403,11 @@ Ask only when all are true:
 2. It cannot be reliably researched.
 3. A reasonable assumption would create meaningful risk or wasted work.
 
-Otherwise proceed with a reasonable assumption.
+Group essential questions into one short follow-up and explain which output each answer affects. Read the brief and supplied sources first; do not ask again for answers already provided. “Not sure—please help” is a request for assistance, not a reason to reject the brief.
 
-Do not ask the client to provide information that can be researched publicly.
+Otherwise proceed with a clearly labeled, low-risk assumption or leave an optional gap blank. Do not invent approved facts or brand rules. Continue independent work while an essential answer is pending.
+
+Public research can resolve factual questions; it cannot establish client approval, private requirements, the authoritative kit version, or permission to use assets. Ask for those decisions when needed. Never ask the client to complete all tabs or repeat kit contents.
 
 ---
 

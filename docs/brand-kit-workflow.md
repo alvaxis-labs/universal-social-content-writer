@@ -4,11 +4,11 @@ Apply this workflow to every client-branded visual. Brand adherence is part of t
 not an optional style suggestion. Standalone fictional concepts without a client are exempt.
 The output remains a prompt for a complete image, including all intended text.
 
-## 1. Find and inspect the authoritative references
+## 1. Ask for the approved source, then inspect it
 
-Read the client's brand-kit links and asset references in the Sheet, brief, existing baseline,
-and supplied files. Search accessible client folders when needed before asking the user to
-locate anything. Inspect visual examples as images as well as reading written guidelines.
+Start with the kit status and kit/asset-folder link supplied in `01 Brand`, the brief or the conversation. Reuse a previously supplied current approved kit; do not request it again. If none is supplied, ask the client for their current approved kit or one asset-folder link. Inspect files within that supplied scope; do not independently search for a different kit and treat it as authoritative. Inspect visual examples as images as well as reading written guidelines.
+
+Extract fonts, colors, logo rules and asset references yourself. Do not make the client transcribe the kit into separate fields. If the client has no kit, use available official assets and examples to propose a concrete direction, label it as proposed, and get approval before treating it as a brand standard. Continue independent copy or planning while that decision is pending.
 A filename or website color is not sufficient evidence of the approved identity.
 
 Use this authority order:

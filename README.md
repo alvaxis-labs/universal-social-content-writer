@@ -2,7 +2,7 @@
 
 A reusable content planning, writing, and creative direction skill for **X/Twitter and Facebook**. It produces written content, copy-paste AI image prompt suggestions, and suggested posting times.
 
-The system is designed so the client maintains one Google Sheet, while the agent maintains compact working context and reusable research.
+The client completes one starting brief and shares approved references. The agent organizes the detailed Google Sheet workspace and maintains compact working context and reusable research.
 
 ## Architecture
 
@@ -55,7 +55,7 @@ are outside this pack's current workflow.
 
 ## Client brand adherence
 
-Before writing a client image prompt, the agent finds and reads the approved brand kit,
+Before writing a client image prompt, the agent asks for the approved brand kit if it has not already been supplied, then reads it,
 records its exact visual rules, and identifies the official assets. Each prompt contains
 the applicable colors, typography, logo treatment, imagery rules and exact text, alongside
 concrete composition instructions. Website observations do not become approved brand rules.
@@ -66,13 +66,15 @@ The balanced visual style above applies only within the client's brand rules.
 
 ## First-time setup
 
-1. Give the agent this repository (or upload this pack).
-2. Give the agent the client's Google Sheet URL.
-3. Paste the prompt in `BOOTSTRAP_PROMPT.md`.
-4. The agent reads `SKILL.md` and the client Sheet.
-5. The agent creates a client workspace and generates `company_baseline.md`.
-6. The agent creates `research_baseline.md` only if durable external research is triggered.
-7. The agent selects the relevant modes, prepares the requested content package, and writes results back to the existing agent-owned Sheet fields.
+1. Give the agent this repository or skill pack and your content request.
+2. Make a copy of the current Google Sheet template below.
+3. Fill only the starting brief in **01 Brand**: nine core answers and three optional answers. “Not sure—please help” is acceptable.
+4. Share one approved brand-kit/asset-folder link, or select “No brand kit yet”. No need to transcribe fonts or colors.
+5. Give the operator access to your copy and linked files, and send the copied Sheet link back. Use `BOOTSTRAP_PROMPT.md` when starting a fresh agent session.
+6. The agent reads your sources, fills designated agent sections and asks a short grouped follow-up only for essential gaps. Empty optional tabs do not block work.
+7. The agent prepares the requested package. Review copy, image prompts and suggested posting times in **07 Content Plan**; detailed columns expand when needed.
+
+The agent proposes a visual direction for approval when no kit exists. Clear, already approved information does not need a second confirmation round.
 
 ## Normal recurring work
 
@@ -92,7 +94,9 @@ Current template:
 
 https://docs.google.com/spreadsheets/d/1MYlCFQZYjfnFfNlWqQ9idDWg1jBpaDZCr6AjkfzzbgQ/edit
 
-The client should make a copy for their company and keep the fixed tab names and headers.
+Use this live Google Sheet as the canonical onboarding template. The bundled `Universal_Content_Writer_Template.xlsx` is the legacy detailed layout and does not include the simplified starting page.
+
+The client should make a copy for their company and keep the fixed tab names and headers. The owner must grant the intended client viewing access if the master is restricted; sharing a URL does not grant access.
 
 See `docs/sheet-schema.md` for the expected structure and ownership rules.
 
