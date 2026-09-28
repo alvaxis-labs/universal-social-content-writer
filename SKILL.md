@@ -229,7 +229,7 @@ Use when creating or revising:
 
 ## Visual Prompt Mode
 
-Use for visual concepts, copy-paste AI image prompt suggestions, on-image copy, and multi-image/carousel outlines. Read [docs/visual-prompts.md](docs/visual-prompts.md) when this mode applies. Give prompts and production notes; do not invoke image-generation tools. Default to a restrained Canva/Photoshop-style graphic design look: clear hierarchy, simple shapes, flat illustration or natural photo elements, and matte finishes. Avoid gratuitous gloss, exaggerated 3D, glow, and cinematic effects. Use those effects only when explicitly requested or supported by approved brand references; express the intended look through concrete visual directions.
+Use for visual concepts, copy-paste AI image prompt suggestions, on-image copy, and multi-image/carousel outlines. Read [docs/visual-prompts.md](docs/visual-prompts.md) when this mode applies. Give prompts for the image AI to create the whole finished graphic, including composition, typography, exact on-image wording, and supplied reference assets. Do not default to blank text areas or require adding text in an editor. The agent supplies the prompt; do not invoke image-generation tools. Default to a restrained Canva/Photoshop-style graphic design look: clear hierarchy, simple shapes, flat illustration or natural photo elements, and matte finishes. Avoid gratuitous gloss, exaggerated 3D, glow, and cinematic effects. Use those effects only when explicitly requested or supported by approved brand references; express the intended look through concrete visual directions.
 
 A simple prompt-only request with a supplied concept can be completed directly without a client Sheet or baseline. For client content, use the same approved context as the writing. Missing visual preferences can be labeled creative suggestions; do not turn them into approved brand rules.
 
@@ -245,7 +245,7 @@ A request may combine modes. For a “complete content package,” apply the wor
 2. Decide whether research is needed using the existing research gate.
 3. Develop the angle and select a suitable format: single post, thread, visual-led post, or multi-image sequence. Explain material changes to the client's suggested execution.
 4. Write the requested platform copy. Adapt the idea for both platforms only when requested.
-5. Include a visual concept and suggested AI image prompt when helpful or requested. For a sequence, provide a panel outline and prompts only for panels needing generated art. State briefly when text-only is the stronger choice.
+5. Include a visual concept and suggested AI image prompt when helpful or requested. For a sequence, provide a panel outline and complete image prompts for panels to be generated, including text-led panels. State briefly when text-only is the stronger choice.
 6. Suggest posting times using Posting Time Mode. Include the day/date, audience time zone, reasoning, and whether the suggestion is based on account evidence or is a test hypothesis.
 7. Verify claims and review the package. Hand off three clearly labeled outputs: `Written content`, `Suggested visual prompt`, and `Suggested posting time`. Include only relevant supporting notes and sources. If a visual is unnecessary, explain that briefly instead of adding decorative work.
 8. Write back only to the existing agent-owned Sheet fields. If access is unavailable, return a labeled, ready-to-paste package and state that no Sheet write occurred.

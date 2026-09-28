@@ -31,7 +31,9 @@ The modes share the same brand context and approved strategy:
 
 Ask for a complete content package to get three outputs: written content, a suggested visual prompt, and a suggested posting time. Or request just one output. Editorial review applies to the whole package.
 Visual Prompt Mode produces suggestions you can copy into an image tool. It does not create
-images. Prompts default to a clean Canva/Photoshop-style layout with restrained effects,
+images itself. Each prompt asks the image AI to create the whole finished graphic, including
+its text and layout; no separate Canva or Photoshop assembly is required by default.
+Prompts default to a clean Canva/Photoshop-style layout with restrained effects,
 flat or natural elements, and minimal gloss. 3D remains available when explicitly requested
 or part of approved brand guidance. See [the visual prompt guide](docs/visual-prompts.md) for the format and an example.
 [Posting time guidance](docs/posting-times.md) distinguishes account evidence from suggested

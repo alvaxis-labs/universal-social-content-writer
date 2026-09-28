@@ -1,7 +1,8 @@
 # Visual concepts and AI image prompt suggestions
 
 Read this guide for Visual Prompt Mode, visual-led posts, or a complete content package.
-The deliverable is a suggested prompt the person can copy into an image-generation tool.
+The deliverable is a suggested prompt the person can copy into an image-generation tool
+to create the whole finished image, including its layout, illustration, and intended text.
 Do not call image-generation tools, produce graphics, or imply that an image already exists.
 
 ## Start with the content idea
@@ -44,10 +45,12 @@ favor restrained depth, matte materials, and simple lighting unless the user spe
 asks for a glossy finish. Preserve explicit creative choices without treating them as defaults
 for every future brief.
 
-For typography-led graphics, provide an image/background prompt plus short assembly notes:
-headline wording, a simple type hierarchy, alignment, and placement of the real logo. Ask the
-person to add exact typography and brand assets in Canva or Photoshop. Do not imply that an
-image prompt produces editable layers or guarantees a result without an AI appearance.
+For typography-led graphics, write one prompt for the complete finished design. Include
+exact headline wording, type hierarchy, alignment, spacing, and any supplied brand assets
+inside that prompt. Canva and Photoshop describe the desired appearance, not a required
+manual editing step. Offer manual editing only if requested or as a fallback for a specific
+generation error. Do not imply that an image prompt produces editable layers or guarantees
+perfect text rendering or a result without an AI appearance.
 
 ## Build a self-contained prompt
 
@@ -57,11 +60,11 @@ following only as useful to the concept:
 - Subject and action: who or what appears, and what they are doing.
 - Setting and supporting objects: details that communicate the intended idea.
 - Style and medium: for example, flat editorial illustration, a photo cutout collage, or natural photography. Use 3D only when requested or established by brand references.
-- Composition: focal point, subject placement, crop, viewpoint, and empty space for text.
+- Composition: focal point, subject placement, crop, viewpoint, and placement of rendered text.
 - Color, material, lighting, and mood: specific visual decisions rather than adjective piles.
 - Canvas: a suggested aspect ratio appropriate to the intended layout; describe it as a
   creative choice, not an unverified platform requirement.
-- Constraints: a few relevant exclusions, such as generated lettering or background clutter.
+- Constraints: a few relevant exclusions, such as unwanted extra lettering or background clutter.
 
 Resolve creative choices in the prompt. Avoid leaving brackets for the user to fill when a
 reasonable choice is possible. Never write vague references such as “use the brand style
@@ -81,9 +84,16 @@ Use a real screenshot or verified product photo when the content depends on exac
 product evidence. Do not ask an image model to invent testimonials, results, data charts,
 certifications, or product features. Distinguish an illustrative scene from factual proof.
 
-Keep a headline and other on-image copy separate from the image prompt by default. Reserve
-space for the person to add exact text and logos in an editor. If the user explicitly wants
-text generated in the image, include the exact wording and note that it needs checking.
+Include all intended on-image text verbatim in the image prompt, with its position, size
+hierarchy, alignment, and font style. Ask the image AI to render that text as part of the
+finished graphic, with no extra wording. Keep text concise and readable. Do not leave blank
+headline areas or defer typography to an editor by default. A deliberately text-free image
+is still valid when it suits the brief.
+
+For a required logo, instruct the image AI to use the supplied approved reference and state
+that the user must attach it. Do not invent a logo or claim an unavailable asset is attached.
+After generation, spelling, legibility, and reference fidelity need checking; a prompt alone
+cannot confirm them. Suggest a targeted regeneration if needed, with manual editing optional.
 
 ## Output
 
@@ -91,9 +101,9 @@ For a prompt-only request, provide one copyable prompt and only essential asset 
 For a content package, use:
 
 1. **Visual concept:** a short explanation of the scene and how it supports the post.
-2. **Suggested AI image prompt:** a plain text code block containing the complete prompt.
-3. **On-image copy:** only when useful, clearly separate from the social caption.
-4. **Reference assets / assembly notes:** only when needed.
+2. **Suggested AI image prompt:** a plain text code block containing the complete finished-image prompt, including exact on-image text.
+3. **On-image copy:** optional duplicate for review; it must already be included in the prompt and remain distinct from the social caption.
+4. **Reference assets / checks:** only when needed. No mandatory manual assembly step.
 
 Offer two or three distinct directions when exploration is requested or the brief is open.
 Recommend one. Do not produce a list of nearly identical prompts for every simple request.
@@ -111,15 +121,15 @@ Canva or Photoshop. Use a warm off-white background with a muted dusty-pink rect
 in the lower-right area. Place one original small fantasy creature over the rectangle,
 drawn as a flat two-dimensional illustration with rounded ears, tiny paws, a curled tail,
 and a curious expression. Use solid pink shapes, a consistent dark-rose outline, and
-minimal shading. Keep a generous clear area in the upper-left for a headline to be added
-later, with balanced margins and a simple visual hierarchy. Limit the palette to off-white,
-dusty pink, and dark rose. Keep edges crisp and the composition uncluttered. No generated
-text, logos, glossy surfaces, 3D rendering, or glow effects.
+minimal shading. Render the exact headline "Stay curious." in the upper-left, using large,
+bold, dark-rose sans-serif lettering, aligned left with generous margins. Integrate the
+headline into the finished graphic. Limit the palette to off-white, dusty pink, and dark
+rose. Keep edges crisp and the composition uncluttered. No extra text, logos, glossy
+surfaces, 3D rendering, or glow effects. Deliver the complete image, not a blank template.
 ```
 
-Optional assembly note: add the approved headline in a bold sans-serif font, aligned left
-in the reserved area, and place the real brand logo with a clear margin. Use approved brand
-fonts and colors when supplied; this example palette is only a creative suggestion.
+Use approved brand fonts, colors, and wording when supplied; this example palette and
+headline are creative suggestions. Check the rendered text after generation.
 
 ## Example: an explicit 3D request
 
@@ -129,8 +139,7 @@ Request: “Suggest a prompt for a 3D Pokémon-style image with pink color.”
 Create an original small Pokémon-style fantasy creature with rounded ears, tiny paws,
 a curled tail, and a curious expression. Use a restrained 3D illustration style with
 matte dusty-pink surfaces, simple forms, and very limited shading. Place the creature
-slightly right of center against a plain warm off-white background, leaving generous
-space on the left for a headline to be added later. Use soft diffuse light and one subtle
+in the center against a plain warm off-white background with balanced margins. Use soft diffuse light and one subtle
 ground shadow. Keep the square composition clean and understated. No glossy plastic,
 reflective pedestal, neon glow, dramatic lighting, generated text, or logos.
 ```
@@ -141,8 +150,10 @@ suggestion, not a generated image or the default direction for other briefs.
 ## Multi-image and carousel outlines
 
 Choose the number of panels based on the story. Provide the purpose, short on-image copy,
-visual concept, and image prompt for each panel that needs generated art. Use a layout brief
-instead of an image prompt for panels that only need text, a real screenshot, or a data chart.
+visual concept, and a complete image prompt for each panel to be generated, including
+text-led panels. Repeat its exact text and layout instructions within its prompt. For real
+screenshots or factual charts, use supplied verified assets as references rather than
+inventing evidence; state any missing asset dependency.
 
 Keep subject descriptions, palette, rendering style, and lighting consistent across prompts.
 Repeat those details in each independent prompt so every panel can be copied on its own.
@@ -155,7 +166,9 @@ current publishing-format support if the user needs implementation-specific guid
 
 Check that the prompt stands alone, matches the caption and brand context, preserves the
 requested style, and contains no contradictory composition instructions or invented facts.
-Check that exact text, asset dependencies, and illustrative assumptions are clearly labeled.
+Check that every intended headline and label appears verbatim inside its image prompt,
+with readable placement instructions and no contradictory "no text" exclusion. Check that
+asset dependencies and illustrative assumptions are clearly labeled.
 Unless the brief requires otherwise, remove gratuitous 3D, shine, glow, and dramatic lighting.
 Check that concrete layout and material choices support the intended Canva/Photoshop-style look.
 A suggested prompt cannot pass visual quality assurance for an image that has not been made.
