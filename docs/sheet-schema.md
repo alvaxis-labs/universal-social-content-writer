@@ -1,4 +1,8 @@
-# Google Sheet Schema
+# Optional Google Sheets / Legacy Schema
+
+Use this only when the client explicitly chooses Google Sheets or requests the legacy layout. The default is downloadable Excel intake and delivery; see [file-workflow.md](file-workflow.md).
+
+Optional Google template: https://docs.google.com/spreadsheets/d/1MYlCFQZYjfnFfNlWqQ9idDWg1jBpaDZCr6AjkfzzbgQ/edit
 
 The client and agent use one client-owned Google Sheet with these fixed tabs:
 

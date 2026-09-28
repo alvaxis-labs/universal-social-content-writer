@@ -63,4 +63,4 @@ Illustrative example, not a universal recommendation:
 
 Use the post's actual objective when evaluating results, such as link clicks, meaningful
 replies, or leads. Do not invent performance improvements or attribute them to timing alone.
-Keep suggestions in agent-owned Draft notes; preserve the client-owned Date / Slot.
+In downloadable workbooks, use Content Calendar’s Suggested date, Suggested time, Time zone and Timing basis fields. Keep client-approved dates/times separate and preserve them. For the optional connected Google Sheets route, use agent-owned Draft notes and preserve Date / Slot.

@@ -1,6 +1,6 @@
 ---
 name: universal-social-content-writer
-description: Plan and write X/Twitter and Facebook content, suggest copy-paste AI image prompts, and recommend posting times with audience time zones and a clear evidence basis. Uses client Google Sheets and compact baselines for brand work. Visual deliverables are prompt suggestions and production notes.
+description: Plan and write X/Twitter and Facebook content, suggest copy-paste AI image prompts, and recommend posting times with audience time zones and a clear evidence basis. Uses uploaded client workbooks and returns downloadable Excel content packages; Google Sheets is optional. Visual deliverables are prompt suggestions and production notes.
 ---
 
 # Universal Social Content Writer
@@ -25,59 +25,32 @@ Do not silently change the client's positioning, audience, approved facts, campa
 
 ---
 
-# System Architecture
+# Workspace and delivery
 
-This skill uses four layers:
+Default to downloadable Excel (`.xlsx`) files. Do not ask clients to connect Google Drive or grant account access as part of normal onboarding. Google Sheets is an optional route only when the user chooses it.
 
-1. `SKILL.md`
-   - Universal instructions.
-   - Never store client-specific information here.
+- `SKILL.md`: shared operating instructions. Never store private client information in this public skill.
+- Client workbook and supplied brand assets: current source material. The latest user-supplied version and explicit corrections take precedence over cached baselines.
+- `company_baseline.md`: compact recurring context derived from approved sources, not a replacement for the client file.
+- `research_baseline.md`: optional durable research context.
 
-2. Client Google Sheet
-   - Source of truth.
-   - Client supplies the starting brief and approvals; agent organizes sourced details.
-   - Contains brand, audience, TOV, product, strategy, competitors, content plan, terminology, claims, and approvals.
-
-3. `company_baseline.md`
-   - Created and maintained by the agent.
-   - Compact working memory derived from the Google Sheet.
-   - Used for normal recurring work so the agent does not reread the full workbook every time.
-
-4. `research_baseline.md`
-   - Optional.
-   - Created and maintained by the agent when durable market/category research is useful.
-   - Stores reusable competitor, category, terminology, audience-language, and content-pattern findings.
-
-The Google Sheet always remains the source of truth.
-
-If a baseline conflicts with the Sheet, trust the Sheet and refresh the baseline.
-
----
-
-# Google Sheet Structure
-
-Expected fixed tabs:
-
-1. `01 Brand`
-2. `02 Audience`
-3. `03 Voice & Style`
-4. `04 Product Offering`
-5. `05 Content Strategy`
-6. `06 Competitors & References`
-7. `07 Content Plan`
-8. `08 Knowledge & Claims`
-
-Do not rename tabs or headers.
-
-The client owns strategy and source information.
-
-The agent may write into agent-designated research, draft, status, verification, source, and working-note fields, including the new template’s agent-completed brand profile and extracted brand rules. Preserve client answers and approval decisions. See [docs/sheet-schema.md](docs/sheet-schema.md) for ownership and older-template handling.
+Read [docs/file-workflow.md](docs/file-workflow.md) for file intake, output columns, versioning and delivery. Read [docs/new-agent-workflow.md](docs/new-agent-workflow.md) for first-session and follow-up decisions. References to “Sheet” elsewhere mean the active client workbook; eight-tab names and `Draft` write-back conventions apply only to the optional Google Sheets/legacy route described in [docs/sheet-schema.md](docs/sheet-schema.md).
 
 ## Client onboarding
 
-For a new client, follow [docs/new-agent-workflow.md](docs/new-agent-workflow.md). Offer the canonical template when no client copy exists. The client fills only the starting brief in `01 Brand`; the other tabs are optional or agent-completed. Never require every tab to be filled. Read supplied brand references, organize the supported details, and ask one short grouped follow-up only for essential gaps or conflicting instructions. A blank optional field does not block work.
+For a new client with no brief, first hand them the bundled [Client Intake Template](assets/Client_Intake_Template.xlsx) as a downloadable attachment. Ask them to fill the yellow answers, save the file and upload it with their brand kit/assets. Do not substitute a Google Sheet link or request a Drive connection. If they already supplied enough context or a completed workbook, use it without forcing repeat intake. Standalone prompt-only requests do not need a workbook.
 
-Ask the client for their current approved brand kit or asset folder if none has been supplied. Do not independently choose a kit or infer brand approval from a website. If no kit exists, propose a direction for approval before using it as the brand standard. Summarize the audience, goal and brand direction briefly; an extra confirmation is needed only for unresolved material choices, not information already approved.
+Accept partially completed files. Extract supported details yourself and ask one short grouped follow-up only for essential gaps or conflicting instructions. Leave optional gaps blank; “Not sure—please help” is a valid response. Summarize your understanding briefly without requiring a second approval for already approved facts.
+
+Ask for the current approved brand kit or uploaded asset files if none were supplied. Do not independently choose a kit or infer approval from a website. If no kit exists, propose a direction for approval before using it as the brand standard. A client may provide links voluntarily; inaccessible links should lead to a request for the specific file upload, not a mandatory account connection.
+
+## Delivery contract
+
+For a content calendar or complete content package, return an actual downloadable `.xlsx` attachment with **Content Calendar**, **Post Content**, and **Image Prompts** tabs, joined by stable **Post ID** values. Keep full copy and full image prompts in separate cells, not together in a Draft cell. Chat contains a short summary, the download link and essential questions. Do not deliver only prose or a Markdown table when file creation is available.
+
+For revisions, use the latest uploaded workbook, preserve client comments, approvals and unchanged posts, and return a new version without overwriting the input. Never assume an older local file is current. Do not mark revised approved content approved without renewed approval of the changed material.
+
+Use Google Sheets only on explicit user preference and authorized access, preserving its existing schema. If file generation is genuinely unavailable, state the limitation and provide separately labeled copyable tables as a fallback; do not claim a workbook was created. Never require a paid tool or connector to follow the file workflow.
 
 ---
 
@@ -87,7 +60,7 @@ Ask the client for their current approved brand kit or asset folder if none has 
 
 For client brand work, if `company_baseline.md` does not exist (standalone supplied-concept prompt requests are exempt):
 
-1. Read the relevant populated sections of the Google Sheet.
+1. Read the latest uploaded client workbook and supplied references (or the chosen Google Sheet).
 2. Build the baseline before substantial strategy or writing work.
 3. Keep it concise and reusable.
 
@@ -177,7 +150,7 @@ Refresh `company_baseline.md` when any of these materially change:
 - compliance constraints
 - competitor/reference set
 
-A new row in `07 Content Plan` alone does not require a baseline refresh.
+A new post or brief alone does not require a baseline refresh.
 
 When unsure whether something changed, read only the relevant Sheet section rather than the entire workbook.
 
@@ -254,7 +227,7 @@ A request may combine modes. For a “complete content package,” apply the wor
 5. Include a visual concept and suggested AI image prompt when helpful or requested. For a sequence, provide a panel outline and complete image prompts for panels to be generated, including text-led panels. State briefly when text-only is the stronger choice.
 6. Suggest posting times using Posting Time Mode. Include the day/date, audience time zone, reasoning, and whether the suggestion is based on account evidence or is a test hypothesis.
 7. Verify claims and review the package. Hand off three clearly labeled outputs: `Written content`, `Suggested visual prompt`, and `Suggested posting time`. Include only relevant supporting notes and sources. If a visual is unnecessary, explain that briefly instead of adding decorative work.
-8. Write back only to the existing agent-owned Sheet fields. If access is unavailable, return a labeled, ready-to-paste package and state that no Sheet write occurred.
+8. Create and attach the downloadable workbook using docs/file-workflow.md. If the user explicitly chose Google Sheets, write only to its authorized agent-owned fields instead and link the updated client copy.
 
 Handoff does not mean publication. Do not schedule or publish posts, mark content published, or invent post URLs as part of preparing a content package. Those actions require a separate user request and actual confirmation of the result.
 
@@ -269,7 +242,7 @@ Use:
 1. `SKILL.md`
 2. `company_baseline.md`
 3. `research_baseline.md` if relevant
-4. the target row or relevant rows from `07 Content Plan`
+4. the relevant Post IDs in the latest uploaded workbook (or target rows in the chosen Google Sheet)
 5. any specific Sheet section required to verify changed or missing information
 
 Only read broader Sheet context when triggered by a baseline refresh or unresolved conflict.
@@ -448,7 +421,7 @@ For each content brief:
 12. Verify claims and terminology, including any factual implications in the visual concept.
 13. Run editorial review.
 14. Rewrite if needed.
-15. Write the result back to the Sheet.
+15. Return the versioned downloadable workbook, or update the chosen Google Sheet when explicitly requested.
 
 ---
 
@@ -586,7 +559,9 @@ If multiple answers are weak, rewrite.
 
 ---
 
-# Sheet Write-Back
+# Optional Google Sheets / Legacy Write-Back
+
+This section applies only when the user chooses the connected Google Sheets route or asks to retain the legacy schema. The default file workflow and its three separate output tabs are defined in docs/file-workflow.md. Do not force a connected account.
 
 ## Content Plan
 
@@ -650,7 +625,7 @@ If the angle changed materially, briefly explain why.
 
 If there is a factual limitation or approval requirement, state it clearly.
 
-When working directly in the Sheet, treat the Sheet as the operational source of truth.
+For file delivery, attach the actual workbook and summarize its scope and unresolved items in chat. Treat the latest supplied file as authoritative. Do not claim an attachment exists until it has been saved and exposed to the user. When the user chooses Google Sheets, link the verified updated client copy instead.
 
 ---
 

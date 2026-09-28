@@ -6,7 +6,7 @@ The output remains a prompt for a complete image, including all intended text.
 
 ## 1. Ask for the approved source, then inspect it
 
-Start with the kit status and kit/asset-folder link supplied in `01 Brand`, the brief or the conversation. Reuse a previously supplied current approved kit; do not request it again. If none is supplied, ask the client for their current approved kit or one asset-folder link. Inspect files within that supplied scope; do not independently search for a different kit and treat it as authoritative. Inspect visual examples as images as well as reading written guidelines.
+Start with the kit status and uploaded files or optional asset references supplied in `Client Brief`, `01 Brand`, or the conversation. Reuse a previously supplied current approved kit; do not request it again. If none is supplied, ask the client to upload their current approved kit and assets; accept one folder link if they prefer. Inspect files within that supplied scope; do not independently search for a different kit and treat it as authoritative. Inspect visual examples as images as well as reading written guidelines.
 
 Extract fonts, colors, logo rules and asset references yourself. Do not make the client transcribe the kit into separate fields. If the client has no kit, use available official assets and examples to propose a concrete direction, label it as proposed, and get approval before treating it as a brand standard. Continue independent copy or planning while that decision is pending.
 A filename or website color is not sufficient evidence of the approved identity.
@@ -45,7 +45,7 @@ Mark unspecified items as unspecified, not inferred facts. Record creative choic
 Do not invent numerical colors, font names or logo dimensions from an example. Where only
 an approved visual reference exists, point to its relevant treatment without claiming exact
 values. Reuse the specification for recurring tasks and refresh it when its sources change.
-Client kits and assets belong outside the shared public skill repository.
+Client kits and assets belong outside the shared public skill repository. If links cannot be opened, request the relevant uploads rather than requiring a Drive connection.
 
 ## 3. Separate fixed rules from permitted choices
 

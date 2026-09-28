@@ -2,16 +2,16 @@
 
 A reusable content planning, writing, and creative direction skill for **X/Twitter and Facebook**. It produces written content, copy-paste AI image prompt suggestions, and suggested posting times.
 
-The client completes one starting brief and shares approved references. The agent organizes the detailed Google Sheet workspace and maintains compact working context and reusable research.
+The client downloads a short intake workbook, fills it in, and uploads it with approved brand references. The agent returns a completed Excel workbook. No Google Drive connection is required.
 
 ## Architecture
 
 - **`SKILL.md`**: universal operating instructions for the agent. Never store client-specific information here.
-- **Client Google Sheet**: source of truth for brand, audience, voice, products, strategy, competitors, content plan, terminology, claims, and approvals.
+- **Latest client workbook and uploaded assets**: source of truth for the brief, approved brand rules, facts and feedback. Google Sheets is optional.
 - **`company_baseline.md`**: agent-generated compressed company context for recurring work.
 - **`research_baseline.md`**: optional agent-generated durable market/category research.
 
-The Google Sheet always wins if it conflicts with a baseline.
+The latest supplied workbook and explicit client corrections take precedence over cached baselines.
 
 ## Supported channels
 
@@ -66,39 +66,20 @@ The balanced visual style above applies only within the client's brand rules.
 
 ## First-time setup
 
-1. Give the agent this repository or skill pack and your content request.
-2. Make a copy of the current Google Sheet template below.
-3. Fill only the starting brief in **01 Brand**: nine core answers and three optional answers. “Not sure—please help” is acceptable.
-4. Share one approved brand-kit/asset-folder link, or select “No brand kit yet”. No need to transcribe fonts or colors.
-5. Give the operator access to your copy and linked files, and send the copied Sheet link back. Use `BOOTSTRAP_PROMPT.md` when starting a fresh agent session.
-6. The agent reads your sources, fills designated agent sections and asks a short grouped follow-up only for essential gaps. Empty optional tabs do not block work.
-7. The agent prepares the requested package. Review copy, image prompts and suggested posting times in **07 Content Plan**; detailed columns expand when needed.
+1. Give the agent this skill pack and say what content you need. You do not need a Sheet URL.
+2. The agent first gives you [Client Intake Template.xlsx](assets/Client_Intake_Template.xlsx), unless you already supplied enough context.
+3. Fill the yellow answers, save the workbook and upload it with your brand kit/assets. Optional answers may stay blank; “Not sure—please help” is valid.
+4. The agent reads your materials and asks only about essential missing details. If no kit exists, it proposes a direction for approval.
+5. Receive a downloadable `.xlsx`: **Content Calendar**, **Post Content**, and **Image Prompts**, connected by **Post ID**. Captions and image prompts have their own cells.
+6. To revise, upload your latest workbook with feedback. The agent returns a new version preserving unchanged work and your decisions.
 
-The agent proposes a visual direction for approval when no kit exists. Clear, already approved information does not need a second confirmation round.
+Use [BOOTSTRAP_PROMPT.md](BOOTSTRAP_PROMPT.md) for a fresh session. See [the file workflow](docs/file-workflow.md) for output fields and delivery rules. Uploading files shares those files with the AI; it does not grant access to your Drive.
 
-## Normal recurring work
+## Optional Google Sheets route
 
-For normal tasks, the agent should **not reread the full workbook**.
+Choose this explicitly if you want the agent to work in a connected Sheet. The [Google template](https://docs.google.com/spreadsheets/d/1MYlCFQZYjfnFfNlWqQ9idDWg1jBpaDZCr6AjkfzzbgQ/edit) and [existing schema](docs/sheet-schema.md) remain supported. Account access and write permissions are separate from skill installation.
 
-It should use:
-
-1. `SKILL.md`
-2. the client's `company_baseline.md`
-3. `research_baseline.md` when relevant
-4. the relevant row(s) from `07 Content Plan`
-5. only the specific Sheet section needed for verification or refresh
-
-## Client Sheet
-
-Current template:
-
-https://docs.google.com/spreadsheets/d/1MYlCFQZYjfnFfNlWqQ9idDWg1jBpaDZCr6AjkfzzbgQ/edit
-
-Use this live Google Sheet as the canonical onboarding template. The bundled `Universal_Content_Writer_Template.xlsx` is the legacy detailed layout and does not include the simplified starting page.
-
-The client should make a copy for their company and keep the fixed tab names and headers. The owner must grant the intended client viewing access if the master is restricted; sharing a URL does not grant access.
-
-See `docs/sheet-schema.md` for the expected structure and ownership rules.
+`Universal_Content_Writer_Template.xlsx` is the legacy eight-tab template. Use `assets/Client_Intake_Template.xlsx` for new file-based onboarding. Do not require clients to fill all legacy tabs.
 
 ## Client workspace
 
