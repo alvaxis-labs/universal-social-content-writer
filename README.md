@@ -31,14 +31,16 @@ The modes share the same brand context and approved strategy:
 
 Ask for a complete content package to get three outputs: written content, a suggested visual prompt, and a suggested posting time. Or request just one output. Editorial review applies to the whole package.
 Visual Prompt Mode produces suggestions you can copy into an image tool. It does not create
-images. See [the visual prompt guide](docs/visual-prompts.md) for the format and an example.
+images. Prompts default to a clean Canva/Photoshop-style layout with restrained effects,
+flat or natural elements, and minimal gloss. 3D remains available when explicitly requested
+or part of approved brand guidance. See [the visual prompt guide](docs/visual-prompts.md) for the format and an example.
 [Posting time guidance](docs/posting-times.md) distinguishes account evidence from suggested
 test windows. These are recommendations, not scheduled posts.
 
 Example requests:
 
 - “Turn Content Plan row 12 into a Facebook post with a visual concept and a copy-paste AI image prompt.”
-- “Suggest a prompt for a pink 3D Pokémon-style creature.”
+- “Suggest a pink character graphic that looks designed in Canva: flat illustration, clean layout, and no glossy 3D.”
 - “Outline a five-panel educational post with panel copy and image prompt suggestions.”
 - “Review this caption and visual prompt together, then improve them.”
 - “Suggest posting hours for this Facebook post for our audience in Vietnam. Label times to test if we have no analytics.”

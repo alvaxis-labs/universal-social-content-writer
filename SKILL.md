@@ -229,7 +229,7 @@ Use when creating or revising:
 
 ## Visual Prompt Mode
 
-Use for visual concepts, copy-paste AI image prompt suggestions, on-image copy, and multi-image/carousel outlines. Read [docs/visual-prompts.md](docs/visual-prompts.md) when this mode applies. Give prompts and production notes; do not invoke image-generation tools.
+Use for visual concepts, copy-paste AI image prompt suggestions, on-image copy, and multi-image/carousel outlines. Read [docs/visual-prompts.md](docs/visual-prompts.md) when this mode applies. Give prompts and production notes; do not invoke image-generation tools. Default to a restrained Canva/Photoshop-style graphic design look: clear hierarchy, simple shapes, flat illustration or natural photo elements, and matte finishes. Avoid gratuitous gloss, exaggerated 3D, glow, and cinematic effects. Use those effects only when explicitly requested or supported by approved brand references; express the intended look through concrete visual directions.
 
 A simple prompt-only request with a supplied concept can be completed directly without a client Sheet or baseline. For client content, use the same approved context as the writing. Missing visual preferences can be labeled creative suggestions; do not turn them into approved brand rules.
 

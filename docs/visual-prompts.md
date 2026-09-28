@@ -19,6 +19,36 @@ For a standalone prompt request, deliver the prompt directly. Do not require a S
 company baseline, or full strategy exercise for a simple supplied concept. Use available
 brand context when the request concerns a known client.
 
+## Default look: ordinary graphic design
+
+Unless the brief or approved brand references call for another style, suggest graphics that
+look deliberately assembled in Canva or Photoshop: clear hierarchy, aligned elements,
+generous spacing, a limited palette, simple shapes, and restrained effects. Translate that
+look into concrete directions; “make it less AI” or “Canva style” alone is not a useful prompt.
+These are appearance references, not claims that the image was made in those applications.
+
+Prefer flat editorial illustration, a clean photo cutout collage, or a simple graphic layout
+when they fit the message. Use matte surfaces, subtle paper texture only when appropriate,
+and natural lighting for photographic elements. Keep texture optional; adding grain or fake
+imperfections everywhere is not a substitute for good composition. Preserve sharp edges,
+readability, and intentional spacing rather than asking for low quality or random mistakes.
+
+Do not add glossy plastic, chrome, glass effects, inflated 3D objects, dramatic cinematic
+lighting, neon glow, floating decorative objects, or excessive gradients by default. Avoid
+prompt filler such as “8K masterpiece,” “ultra-detailed,” and “Unreal Engine render” unless a
+specific requested execution needs it. Choose a few relevant exclusions rather than an
+exhaustive negative-prompt list.
+
+Use 3D only when explicitly requested or supported by approved brand references. Even then,
+favor restrained depth, matte materials, and simple lighting unless the user specifically
+asks for a glossy finish. Preserve explicit creative choices without treating them as defaults
+for every future brief.
+
+For typography-led graphics, provide an image/background prompt plus short assembly notes:
+headline wording, a simple type hierarchy, alignment, and placement of the real logo. Ask the
+person to add exact typography and brand assets in Canva or Photoshop. Do not imply that an
+image prompt produces editable layers or guarantees a result without an AI appearance.
+
 ## Build a self-contained prompt
 
 Write concrete natural language that works without a particular image tool. Include the
@@ -26,7 +56,7 @@ following only as useful to the concept:
 
 - Subject and action: who or what appears, and what they are doing.
 - Setting and supporting objects: details that communicate the intended idea.
-- Style and medium: for example, 3D toy rendering, photography, or flat illustration.
+- Style and medium: for example, flat editorial illustration, a photo cutout collage, or natural photography. Use 3D only when requested or established by brand references.
 - Composition: focal point, subject placement, crop, viewpoint, and empty space for text.
 - Color, material, lighting, and mood: specific visual decisions rather than adjective piles.
 - Canvas: a suggested aspect ratio appropriate to the intended layout; describe it as a
@@ -69,23 +99,44 @@ Offer two or three distinct directions when exploration is requested or the brie
 Recommend one. Do not produce a list of nearly identical prompts for every simple request.
 Label any proposed alt text as provisional until someone can inspect the generated image.
 
-## Example: standalone creative request
+## Example: default graphic design direction
 
-Request: “Suggest a prompt for a 3D Pokémon-style image with pink color.”
+Request: “Suggest a pink visual for a playful character post.”
 
 Suggested AI image prompt:
 
 ```text
-Create a playful 3D Pokémon-style scene featuring an original small fantasy creature
-with rounded ears, tiny paws, a curled tail, and an excited expression. Give it soft
-bubblegum-pink fur with pale rose accents. Place it on a blush-pink circular pedestal
-against a simple pastel-pink studio background. Use smooth toy-like forms, soft studio
-lighting, gentle shadows, and a slightly low three-quarter camera angle. Keep the full
-creature visible with generous breathing room in a square composition. The mood is warm,
-curious, and charming. No lettering, logos, or extra characters.
+Create a square social graphic with the feel of a simple editorial layout assembled in
+Canva or Photoshop. Use a warm off-white background with a muted dusty-pink rectangle
+in the lower-right area. Place one original small fantasy creature over the rectangle,
+drawn as a flat two-dimensional illustration with rounded ears, tiny paws, a curled tail,
+and a curious expression. Use solid pink shapes, a consistent dark-rose outline, and
+minimal shading. Keep a generous clear area in the upper-left for a headline to be added
+later, with balanced margins and a simple visual hierarchy. Limit the palette to off-white,
+dusty pink, and dark rose. Keep edges crisp and the composition uncluttered. No generated
+text, logos, glossy surfaces, 3D rendering, or glow effects.
 ```
 
-This is a prompt suggestion, not a generated image or a default style for other brands.
+Optional assembly note: add the approved headline in a bold sans-serif font, aligned left
+in the reserved area, and place the real brand logo with a clear margin. Use approved brand
+fonts and colors when supplied; this example palette is only a creative suggestion.
+
+## Example: an explicit 3D request
+
+Request: “Suggest a prompt for a 3D Pokémon-style image with pink color.”
+
+```text
+Create an original small Pokémon-style fantasy creature with rounded ears, tiny paws,
+a curled tail, and a curious expression. Use a restrained 3D illustration style with
+matte dusty-pink surfaces, simple forms, and very limited shading. Place the creature
+slightly right of center against a plain warm off-white background, leaving generous
+space on the left for a headline to be added later. Use soft diffuse light and one subtle
+ground shadow. Keep the square composition clean and understated. No glossy plastic,
+reflective pedestal, neon glow, dramatic lighting, generated text, or logos.
+```
+
+This respects the requested 3D style while keeping effects restrained. It is a prompt
+suggestion, not a generated image or the default direction for other briefs.
 
 ## Multi-image and carousel outlines
 
@@ -105,4 +156,6 @@ current publishing-format support if the user needs implementation-specific guid
 Check that the prompt stands alone, matches the caption and brand context, preserves the
 requested style, and contains no contradictory composition instructions or invented facts.
 Check that exact text, asset dependencies, and illustrative assumptions are clearly labeled.
+Unless the brief requires otherwise, remove gratuitous 3D, shine, glow, and dramatic lighting.
+Check that concrete layout and material choices support the intended Canva/Photoshop-style look.
 A suggested prompt cannot pass visual quality assurance for an image that has not been made.
